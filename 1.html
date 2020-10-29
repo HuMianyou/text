@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+		#box{
+			width: 320px;
+			height: 150px;
+			background: pink;
+			margin: 50px auto;
+			position:relative;
+		}
+		#box div{
+			width: 96px;
+			height: 96px;
+			border-radius: 50%;
+			display: inline-block;
+		}
+		.one{
+			border:2px solid blue;
+		}
+		.two{
+			margin:0 10px;
+			border:2px solid black;
+			z-index: 3;
+		}
+		.three{
+			border:2px solid red;
+		}
+		.four{
+			position:absolute;
+			border:2px solid yellow;
+			left:55px;
+			bottom: 0;
+		}
+		.fives{
+			position:absolute;
+			border: 2px solid green;
+			bottom: 0;
+			right: 55px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="one"></div><div class="two"></div><div class="three"></div>
+		<div class="four"></div><div class="fives"></div>
+	</div>
+</body>
+</html>
